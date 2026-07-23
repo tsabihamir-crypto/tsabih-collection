@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول | Tsabih Collection - تسابيح كولكشن</title>
+<meta name="description" content="سجّلي الدخول إلى حسابك في تسابيح كولكشن أو أنشئي حساباً جديداً للاستمتاع بتجربة تسوّق مخصصة.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📿</text></svg>">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-links"><span data-i18n="top_ship">شحن مجاني للطلبات فوق 50,000 ج.س</span></div>
+    <div class="top-bar-tools">
+      <a href="contact.html" data-i18n="top_track">تتبع طلبك</a>
+      <a href="contact.html" data-i18n="top_help">المساعدة</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">ت</span>
+      <span class="brand-name">Tsabih Collection<small>TSABIH COLLECTION — تسابيح كولكشن</small></span>
+    </a>
+
+    <!-- ====== زر القائمة (البرغر) ====== -->
+    <div class="burger" aria-label="القائمة">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+      <a href="products.html" data-i18n="nav_shop">المتجر</a>
+      <a href="about.html" data-i18n="nav_about">من نحن</a>
+      <a href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+      <a href="login.html" class="active" data-i18n="nav_login">حسابي</a>
+    </nav>
+
+    <!-- ====== التغطية الخلفية للقائمة ====== -->
+    <div class="nav-overlay"></div>
+
+    <div class="nav-tools">
+      <div class="dropdown">
+        <button class="icon-btn dropdown-toggle" aria-label="الإعدادات" title="اللون واللغة">🎨</button>
+        <div class="dropdown-panel">
+          <div class="dropdown-title" data-i18n="theme_label">اختر لون الموقع</div>
+          <div class="theme-grid">
+            <button class="theme-dot active" data-theme-btn="default"></button>
+            <button class="theme-dot" data-theme-btn="emerald"></button>
+            <button class="theme-dot" data-theme-btn="midnight"></button>
+            <button class="theme-dot" data-theme-btn="noir"></button>
+          </div>
+          <div class="dropdown-title" data-i18n="lang_label">اللغة / Language</div>
+          <div class="lang-switch">
+            <button data-lang-btn="ar" class="active">العربية</button>
+            <button data-lang-btn="en">English</button>
+          </div>
+        </div>
+      </div>
+      <a href="products.html#favorites" class="icon-btn" aria-label="المفضلة">♡<span class="cart-count fav-count">0</span></a>
+      <a href="order.html" class="icon-btn" aria-label="سلة التسوق">🛍<span class="cart-count">0</span></a>
+      <a href="login.html" class="icon-btn" aria-label="حسابي">👤</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============== حالة: زائر (نموذج الدخول/التسجيل) ============== -->
+<section class="section" id="guestArea">
+  <div class="container">
+    <div class="auth-wrapper" data-reveal>
+
+      <!-- ============ الجهة الترويجية ============ -->
+      <div class="auth-visual">
+        <div class="tasbih-divider light" style="margin-inline-start:0; justify-content:flex-start;"><span></span><span></span><span></span><span></span><span></span></div>
+        <h2>أهلاً بكِ في عائلة تسابيح</h2>
+        <p>سجّلي دخولك للاستمتاع بتجربة تسوّق مخصصة، تتبع طلباتك بسهولة، وحفظ منتجاتك المفضلة.</p>
+        <ul>
+          <li><span class="chk">✓</span> تتبع حالة طلباتك لحظة بلحظة</li>
+          <li><span class="chk">✓</span> حفظ عناوين الشحن المفضلة</li>
+          <li><span class="chk">✓</span> الوصول لعروض حصرية لأعضاء تسابيح</li>
+          <li><span class="chk">✓</span> قائمة مفضلة لحفظ القطع التي تعجبكِ</li>
+        </ul>
+      </div>
+
+      <!-- ============ نموذج الدخول / التسجيل ============ -->
+      <div class="auth-form-side">
+        <div class="tabs">
+          <button class="tab-btn active" data-tab-target="loginPanel">تسجيل الدخول</button>
+          <button class="tab-btn" data-tab-target="registerPanel">إنشاء حساب</button>
+        </div>
+
+        <div class="alert-box"></div>
+
+        <!-- ---------- تبويب تسجيل الدخول ---------- -->
+        <div class="tab-panel active" id="loginPanel">
+          <form id="loginForm" action="php/login.php" method="POST" data-validate-form data-demo="true" data-success-msg="تم تسجيل الدخول بنجاح! جاري تحويلك...">
+            <div class="form-group">
+              <label for="l_email">البريد الإلكتروني <span class="required">*</span></label>
+              <div class="input-icon-wrap">
+                <span class="fld-icon">✉</span>
+                <input type="email" id="l_email" name="email" class="form-control" required data-validate="email" placeholder="example@email.com">
+              </div>
+              <span class="field-error">⚠</span>
+            </div>
+
+            <div class="form-group">
+              <label for="l_pass">كلمة المرور <span class="required">*</span></label>
+              <div class="input-icon-wrap">
+                <span class="fld-icon">🔒</span>
+                <input type="password" id="l_pass" name="password" class="form-control" required placeholder="••••••••">
+                <button type="button" class="toggle-pass">👁</button>
+              </div>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:24px;">
+              <label class="checkbox-row" style="margin:0;">
+                <input type="checkbox" name="remember"> <span>تذكرني</span>
+              </label>
+              <a href="#" style="font-size:.85rem; font-weight:700; color:var(--color-primary);">نسيتِ كلمة المرور؟</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">دخول 🔑</button>
+          </form>
+
+          <div class="divider-or">أو الدخول عبر</div>
+          <div class="social-auth">
+            <button type="button">📘 فيسبوك</button>
+            <button type="button">🔴 جوجل</button>
+          </div>
+
+          <p class="form-foot-link">ليس لديكِ حساب؟ <a href="#" data-switch-to="registerPanel">أنشئي حساباً الآن</a></p>
+        </div>
+
+        <!-- ---------- تبويب إنشاء حساب ---------- -->
+        <div class="tab-panel" id="registerPanel">
+          <form id="registerForm" action="php/register.php" method="POST" data-validate-form data-demo="true" data-success-msg="تم إنشاء الحساب بنجاح! يمكنكِ الآن تسجيل الدخول.">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="r_name">الاسم الكامل <span class="required">*</span></label>
+                <input type="text" id="r_name" name="full_name" class="form-control" required data-validate="name" placeholder="اسمك الكامل">
+                <span class="field-error">⚠</span>
+              </div>
+              <div class="form-group">
+                <label for="r_phone">رقم الهاتف <span class="required">*</span></label>
+                <input type="tel" id="r_phone" name="phone" class="form-control" required data-validate="phone" placeholder="0912345678">
+                <span class="field-error">⚠</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="r_email">البريد الإلكتروني <span class="required">*</span></label>
+              <input type="email" id="r_email" name="email" class="form-control" required data-validate="email" placeholder="example@email.com">
+              <span class="field-error">⚠</span>
+            </div>
+
+            <div class="form-group">
+              <label for="r_pass">كلمة المرور <span class="required">*</span></label>
+              <div class="input-icon-wrap">
+                <span class="fld-icon">🔒</span>
+                <input type="password" id="r_pass" name="password" class="form-control" required data-validate="password" placeholder="8 أحرف على الأقل">
+                <button type="button" class="toggle-pass">👁</button>
+              </div>
+              <div class="pass-strength"><span></span><span></span><span></span><span></span></div>
+              <p class="field-hint">يجب أن تحتوي على حرف كبير، حرف صغير، ورقم على الأقل</p>
+              <span class="field-error">⚠</span>
+            </div>
+
+            <div class="form-group">
+              <label for="r_pass2">تأكيد كلمة المرور <span class="required">*</span></label>
+              <input type="password" id="r_pass2" name="password_confirm" class="form-control" required data-validate="confirm-password" data-matches="r_pass" placeholder="أعيدي كتابة كلمة المرور">
+              <span class="field-error">⚠</span>
+            </div>
+
+            <label class="checkbox-row">
+              <input type="checkbox" required data-validate="checkbox" name="agree">
+              <span>أوافق على <a href="#">الشروط والأحكام</a> و<a href="#">سياسة الخصوصية</a></span>
+            </label>
+            <span class="field-error" style="margin-top:-14px; margin-bottom:16px;">⚠ يجب الموافقة على الشروط</span>
+
+            <button type="submit" class="btn btn-primary btn-block">إنشاء الحساب ✨</button>
+          </form>
+          <p class="form-foot-link">لديكِ حساب بالفعل؟ <a href="#" data-switch-to="loginPanel">سجّلي الدخول</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== حالة: مستخدم مسجّل دخول ============== -->
+<section class="section" id="memberArea" style="display:none;">
+  <div class="container" style="max-width:640px;">
+    <div class="status-page" data-reveal>
+      <div class="status-box">
+        <div class="status-icon">👤</div>
+        <h2>أهلاً بعودتك، <span id="memberName">عميلتنا العزيزة</span>!</h2>
+        <p>تم تسجيل دخولك بنجاح إلى حسابك في تسابيح كولكشن. من هنا يمكنكِ متابعة طلباتك أو تصفح أحدث المنتجات.</p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+          <a href="products.html" class="btn btn-primary">تصفحي المتجر</a>
+          <a href="order.html" class="btn btn-outline">طلباتي</a>
+          <button id="logoutBtn" class="btn" style="background:var(--color-error); color:#fff;">تسجيل الخروج 🚪</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== الفوتر ============== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand"><span class="brand-mark">ت</span><span class="brand-name">Tsabih Collection</span></a>
+      <p data-i18n="footer_about">تسابيح كولكشن علامة سودانية للأزياء الراقية، نقدم قطعاً تجمع بين الأصالة والحداثة بجودة استثنائية وخدمة تليق بكِ.</p>
+      <div class="footer-social"><a href="#">f</a><a href="#">◎</a><a href="#">♪</a><a href="#">✆</a></div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_links">روابط سريعة</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+        <li><a href="products.html" data-i18n="nav_shop">المتجر</a></li>
+        <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+        <li><a href="login.html" data-i18n="nav_login">حسابي</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_help">خدمة العملاء</h4>
+      <ul>
+        <li><a href="#" data-i18n="footer_help1">سياسة الشحن</a></li>
+        <li><a href="#" data-i18n="footer_help2">سياسة الإرجاع</a></li>
+        <li><a href="contact.html" data-i18n="footer_help3">الأسئلة الشائعة</a></li>
+        <li><a href="#" data-i18n="footer_help4">دليل المقاسات</a></li>
+        <li><a href="#" data-i18n="footer_help5">تتبع الطلب</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4 data-i18n="footer_newsletter">النشرة البريدية</h4>
+      <p>كوني أول من يعلم بالعروض والمجموعات الجديدة</p>
+      <form class="footer-mini-form" data-validate-form data-demo="true" data-success-msg="تم الاشتراك بنجاح!">
+        <input type="email" required data-validate="email" placeholder="بريدك الإلكتروني">
+        <button type="submit" class="icon-btn" style="background:var(--color-accent); color:var(--color-primary-dark); border:none; flex-shrink:0;">➜</button>
+      </form>
+      <div class="payment-icons"><span>VISA</span><span>MasterCard</span><span>COD</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="js-year">2026</span> Tsabih Collection — <span data-i18n="footer_rights">جميع الحقوق محفوظة</span>. صُنع بـ ♥ في السودان</span>
+      <div class="footer-bottom-links">
+        <a href="#" data-i18n="footer_terms">الشروط والأحكام</a>
+        <a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="العودة للأعلى">↑</button>
+
+<script src="js/theme-lang.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+<script>
+document.getElementById('js-year').textContent = new Date().getFullYear();
+
+/* ====================================================================
+   محاكاة تسجيل الدخول/الخروج من جهة المتصفح (Demo Mode)
+   ==================================================================== */
+(function () {
+  const guestArea = document.getElementById('guestArea');
+  const memberArea = document.getElementById('memberArea');
+  const memberName = document.getElementById('memberName');
+  const loginForm = document.getElementById('loginForm');
+  const registerForm = document.getElementById('registerForm');
+  const logoutBtn = document.getElementById('logoutBtn');
+
+  function showMemberState(name) {
+    guestArea.style.display = 'none';
+    memberArea.style.display = 'block';
+    memberName.textContent = name || 'عميلتنا العزيزة';
+    localStorage.setItem('tsabih_logged_in', '1');
+    localStorage.setItem('tsabih_user_name', name || '');
+  }
+  function showGuestState() {
+    guestArea.style.display = 'block';
+    memberArea.style.display = 'none';
+    localStorage.removeItem('tsabih_logged_in');
+    localStorage.removeItem('tsabih_user_name');
+  }
+
+  if (localStorage.getItem('tsabih_logged_in') === '1') {
+    showMemberState(localStorage.getItem('tsabih_user_name'));
+  }
+
+  if (loginForm) {
+    loginForm.addEventListener('submit', function () {
+      const emailVal = document.getElementById('l_email').value;
+      const isValidAlready = !loginForm.querySelector('.invalid');
+      if (isValidAlready && document.getElementById('l_email').value && document.getElementById('l_pass').value) {
+        setTimeout(() => showMemberState(emailVal.split('@')[0]), 900);
+      }
+    });
+  }
+
+  if (registerForm) {
+    registerForm.addEventListener('submit', function () {
+      setTimeout(() => {
+        document.querySelector('[data-tab-target="loginPanel"]').click();
+      }, 1300);
+    });
+  }
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', function () {
+      showGuestState();
+      showToast('تم تسجيل الخروج', 'نتمنى رؤيتك مجدداً قريباً 🌸');
+    });
+  }
+
+  document.querySelectorAll('[data-switch-to]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector(`[data-tab-target="${link.dataset.switchTo}"]`).click();
+    });
+  });
+})();
+</script>
+</body>
+</html>

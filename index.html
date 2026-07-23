@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسابيح كولكشن | Tsabih Collection - أزياء نسائية راقية</title>
+<meta name="description" content="تسابيح كولكشن - متجرك الأول للأزياء النسائية الراقية، عبايات، فساتين سهرة، أزياء يومية وإكسسوارات بجودة عالية وتصميم عصري.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📿</text></svg>">
+</head>
+<body>
+
+<!-- ============== الشريط العلوي ============== -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-links">
+      <span data-i18n="top_ship">شحن مجاني للطلبات فوق 50,000 ج.س</span>
+    </div>
+    <div class="top-bar-tools">
+      <a href="contact.html" data-i18n="top_track">تتبع طلبك</a>
+      <a href="contact.html" data-i18n="top_help">المساعدة</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============== الهيدر / التنقل ============== -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">ت</span>
+      <span class="brand-name">Tsabih Collection<small>TSABIH COLLECTION — تسابيح كولكشن</small></span>
+    </a>
+
+    <!-- ====== زر القائمة (البرغر) ====== -->
+    <div class="burger" aria-label="القائمة">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active" data-i18n="nav_home">الرئيسية</a>
+      <a href="products.html" data-i18n="nav_shop">المتجر</a>
+      <a href="about.html" data-i18n="nav_about">من نحن</a>
+      <a href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+      <a href="login.html" data-i18n="nav_login">حسابي</a>
+    </nav>
+
+    <!-- ====== التغطية الخلفية للقائمة ====== -->
+    <div class="nav-overlay"></div>
+
+    <div class="nav-tools">
+      <!-- تبديل اللون واللغة -->
+      <div class="dropdown">
+        <button class="icon-btn dropdown-toggle" aria-label="الإعدادات" title="اللون واللغة">🎨</button>
+        <div class="dropdown-panel">
+          <div class="dropdown-title" data-i18n="theme_label">اختر لون الموقع</div>
+          <div class="theme-grid">
+            <button class="theme-dot active" data-theme-btn="default" title="عناب وذهبي"></button>
+            <button class="theme-dot" data-theme-btn="emerald" title="زمردي وذهبي"></button>
+            <button class="theme-dot" data-theme-btn="midnight" title="كحلي وفضي"></button>
+            <button class="theme-dot" data-theme-btn="noir" title="أسود ووردي"></button>
+          </div>
+          <div class="dropdown-title" data-i18n="lang_label">اللغة / Language</div>
+          <div class="lang-switch">
+            <button data-lang-btn="ar" class="active">العربية</button>
+            <button data-lang-btn="en">English</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="products.html#favorites" class="icon-btn" aria-label="المفضلة">♡<span class="cart-count fav-count">0</span></a>
+      <a href="order.html" class="icon-btn" aria-label="سلة التسوق">🛍<span class="cart-count">0</span></a>
+      <a href="login.html" class="icon-btn" aria-label="حسابي" id="js-header-user">👤</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============== قسم البطل Hero ============== -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-eyebrow" data-i18n="hero_badge">✨ مجموعة الموسم الجديد ٢٠٢٦</span>
+      <h1 class="hero-title">
+        <span data-i18n="hero_title_1">أناقة تُروى</span> <span data-i18n="hero_title_2">بخيوط الأصالة</span>
+      </h1>
+      <p class="hero-desc" data-i18n="hero_desc">تسابيح كولكشن — وجهتك الأولى للأزياء الراقية المصممة بحب، لتجمع بين الطابع التراثي واللمسة العصرية في كل قطعة.</p>
+      <div class="hero-actions">
+        <a href="products.html" class="btn btn-gold" data-i18n="hero_shop">تسوّق المجموعة</a>
+        <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.5); color:#fff;" data-i18n="hero_story">قصتنا</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>+320</strong><span data-i18n="hero_stat1">قطعة أصلية</span></div>
+        <div><strong>+4200</strong><span data-i18n="hero_stat2">عميلة سعيدة</span></div>
+        <div><strong>+8</strong><span data-i18n="hero_stat3">سنوات خبرة</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=700&q=80" alt="أزياء تسابيح كولكشن">
+      </div>
+      <div class="hero-badge">١٥٪ خصم<small>على أول طلب</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== شريط المزايا ============== -->
+<section class="perks">
+  <div class="container">
+    <div class="perk-item"><div class="perk-icon">🚚</div><div><h4 data-i18n="perk1_t">شحن سريع وآمن</h4><p data-i18n="perk1_d">توصيل لكل الولايات خلال ٢-٥ أيام</p></div></div>
+    <div class="perk-item"><div class="perk-icon">💳</div><div><h4 data-i18n="perk2_t">دفع عند الاستلام</h4><p data-i18n="perk2_d">أو دفع إلكتروني آمن ١٠٠٪</p></div></div>
+    <div class="perk-item"><div class="perk-icon">↩️</div><div><h4 data-i18n="perk3_t">إرجاع مجاني</h4><p data-i18n="perk3_d">خلال ١٤ يوم من الاستلام</p></div></div>
+    <div class="perk-item"><div class="perk-icon">🎧</div><div><h4 data-i18n="perk4_t">دعم على مدار الساعة</h4><p data-i18n="perk4_d">فريقنا جاهز للرد على استفساراتك</p></div></div>
+  </div>
+</section>
+
+<!-- ============== الفئات ============== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow" data-i18n="cats_eyebrow">تصفّح حسب الفئة</div>
+      <h2 class="section-title" data-i18n="cats_title">فئات مختارة بعناية</h2>
+      <div class="tasbih-divider"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p class="section-desc" data-i18n="cats_desc">من الزي التقليدي الفاخر إلى الإطلالات العصرية اليومية — كل فئة مصممة لتلائم ذوقك.</p>
+    </div>
+    <div class="cat-grid">
+      <a href="products.html?cat=abaya" class="cat-card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=500&q=80" alt="عبايات وتوب">
+        <div class="cat-overlay"><span>24 قطعة</span><h3 data-i18n="cat1">عبايات وتوب</h3><span class="cat-link" data-i18n="cat_link">تسوّقي الآن ←</span></div>
+      </a>
+      <a href="products.html?cat=evening" class="cat-card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=500&q=80" alt="فساتين سهرة">
+        <div class="cat-overlay"><span>18 قطعة</span><h3 data-i18n="cat2">فساتين سهرة</h3><span class="cat-link" data-i18n="cat_link">تسوّقي الآن ←</span></div>
+      </a>
+      <a href="products.html?cat=daily" class="cat-card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&q=80" alt="أزياء يومية">
+        <div class="cat-overlay"><span>36 قطعة</span><h3 data-i18n="cat3">أزياء يومية</h3><span class="cat-link" data-i18n="cat_link">تسوّقي الآن ←</span></div>
+      </a>
+      <a href="products.html?cat=accessories" class="cat-card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=500&q=80" alt="إكسسوارات">
+        <div class="cat-overlay"><span>15 قطعة</span><h3 data-i18n="cat4">إكسسوارات</h3><span class="cat-link" data-i18n="cat_link">تسوّقي الآن ←</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== وصل حديثاً ============== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow" data-i18n="new_eyebrow">وصل حديثاً</div>
+      <h2 class="section-title" data-i18n="new_title">أحدث القطع في المجموعة</h2>
+      <div class="tasbih-divider"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <p class="section-desc" data-i18n="new_desc">تشكيلة مختارة من أجدد إصدارات الموسم، بجودة عالية وتفاصيل مبهرة.</p>
+    </div>
+
+    <div class="product-grid">
+      <!-- منتج 1 -->
+      <div class="product-card" data-reveal>
+        <div class="product-thumb">
+          <span class="product-tag">جديد</span>
+          <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&q=80" alt="فستان عناب مطرز">
+          <div class="product-actions">
+            <button class="js-add-cart" data-i18n="add_cart">أضف للسلة</button>
+            <button class="fav-btn js-add-fav" aria-label="أضف للمفضلة">♡</button>
+          </div>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">فساتين سهرة</span>
+          <h3 class="product-name">فستان عناب مطرز يدوياً</h3>
+          <div class="product-rating">★★★★★ <span style="color:var(--color-text-soft)">(48)</span></div>
+          <div class="product-price"><span class="price-now">42,000 ج.س</span></div>
+        </div>
+      </div>
+      <!-- منتج 2 -->
+      <div class="product-card" data-reveal>
+        <div class="product-thumb">
+          <span class="product-tag sale">خصم 20%</span>
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&q=80" alt="توب حرير كريمي">
+          <div class="product-actions">
+            <button class="js-add-cart" data-i18n="add_cart">أضف للسلة</button>
+            <button class="fav-btn js-add-fav" aria-label="أضف للمفضلة">♡</button>
+          </div>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">عبايات وتوب</span>
+          <h3 class="product-name">توب حرير كريمي فاخر</h3>
+          <div class="product-rating">★★★★★ <span style="color:var(--color-text-soft)">(31)</span></div>
+          <div class="product-price"><span class="price-now">28,800 ج.س</span><span class="price-old">36,000 ج.س</span></div>
+        </div>
+      </div>
+      <!-- منتج 3 -->
+      <div class="product-card" data-reveal>
+        <div class="product-thumb">
+          <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80" alt="طقم يومي عصري">
+          <div class="product-actions">
+            <button class="js-add-cart" data-i18n="add_cart">أضف للسلة</button>
+            <button class="fav-btn js-add-fav" aria-label="أضف للمفضلة">♡</button>
+          </div>
+        </div>
+        <div class="product-body">
+          <span class="product-cat">أزياء يومية</span>
+          <h3 class="product-name">طقم يومي عصري بقصة مريحة</h3>
+          <div class="product-rating">★★★★☆ <span style="color:var(--color-text-soft)">(19)</span></div>
+          <div class="product-price"><span class="price-now">19,500 ج.س</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:46px;" data-reveal>
+      <a href="products.html" class="btn btn-primary">عرض كل المنتجات</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== لماذا تسابيح ============== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow" data-i18n="why_eyebrow">لماذا تختارين تسابيح</div>
+      <h2 class="section-title" data-i18n="why_title">تجربة تسوّق استثنائية</h2>
+      <div class="tasbih-divider"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card" data-reveal>
+        <div class="feature-num">01</div>
+        <h3 data-i18n="why1_t">خامات فاخرة</h3>
+        <p data-i18n="why1_d">نختار أجود الأقمشة المستوردة لضمان راحة وجودة تدوم طويلاً.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <div class="feature-num">02</div>
+        <h3 data-i18n="why2_t">تصميم حصري</h3>
+        <p data-i18n="why2_d">كل قطعة مصممة داخلياً بلمسة فنية لا تجدينها في مكان آخر.</p>
+      </div>
+      <div class="feature-card" data-reveal>
+        <div class="feature-num">03</div>
+        <h3 data-i18n="why3_t">خدمة عملاء مميزة</h3>
+        <p data-i18n="why3_d">فريق متخصص لمساعدتك في اختيار المقاس والموديل المناسب.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== آراء العميلات ============== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow" data-i18n="test_eyebrow">آراء عميلاتنا</div>
+      <h2 class="section-title" data-i18n="test_title">ماذا يقلن عنّا</h2>
+      <div class="tasbih-divider"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+    <div class="testimonial-track">
+      <div class="testimonial-card" data-reveal>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">جودة القماش فاقت توقعاتي، والتوصيل كان أسرع مما تخيلت. تجربة تسوّق راقية فعلاً.</p>
+        <div class="testimonial-user">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="عميلة">
+          <div><strong>سارة أحمد</strong><span>أم درمان</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-reveal>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">فستان السهرة كان بالضبط زي الصورة، والألوان زاهية والخياطة متقنة جداً. أنصح به بشدة.</p>
+        <div class="testimonial-user">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&q=80" alt="عميلة">
+          <div><strong>منى الطيب</strong><span>الخرطوم</span></div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-reveal>
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">خدمة العملاء ساعدوني في اختيار المقاس المناسب بصبر، والنتيجة كانت مثالية تماماً.</p>
+        <div class="testimonial-user">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80" alt="عميلة">
+          <div><strong>ريم عثمان</strong><span>بحري</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== النشرة البريدية ============== -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="newsletter" data-reveal>
+      <h2 data-i18n="news_title">انضمي لعائلة تسابيح</h2>
+      <p data-i18n="news_desc">اشتركي في نشرتنا البريدية واحصلي على خصم ١٥٪ على طلبك الأول</p>
+      <form class="newsletter-form" data-validate-form data-demo="true" data-success-msg="تم الاشتراك بنجاح! تحققي من بريدك.">
+        <div style="flex:1;">
+          <input type="email" class="form-control" required data-validate="email" placeholder="بريدك الإلكتروني" data-i18n-placeholder="news_placeholder" style="padding-inline-start:20px;">
+        </div>
+        <button type="submit" class="btn btn-gold" data-i18n="news_btn">اشتراك</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============== الفوتر ============== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand"><span class="brand-mark">ت</span><span class="brand-name">Tsabih Collection</span></a>
+      <p data-i18n="footer_about">تسابيح كولكشن علامة سودانية للأزياء الراقية، نقدم قطعاً تجمع بين الأصالة والحداثة بجودة استثنائية وخدمة تليق بكِ.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="فيسبوك">f</a>
+        <a href="#" aria-label="إنستغرام">◎</a>
+        <a href="#" aria-label="تيك توك">♪</a>
+        <a href="#" aria-label="واتساب">✆</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_links">روابط سريعة</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+        <li><a href="products.html" data-i18n="nav_shop">المتجر</a></li>
+        <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+        <li><a href="login.html" data-i18n="nav_login">حسابي</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_help">خدمة العملاء</h4>
+      <ul class="footer-contact" style="display:block;">
+        <li><a href="#" data-i18n="footer_help1">سياسة الشحن</a></li>
+        <li><a href="#" data-i18n="footer_help2">سياسة الإرجاع</a></li>
+        <li><a href="contact.html" data-i18n="footer_help3">الأسئلة الشائعة</a></li>
+        <li><a href="#" data-i18n="footer_help4">دليل المقاسات</a></li>
+        <li><a href="#" data-i18n="footer_help5">تتبع الطلب</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4 data-i18n="footer_newsletter">النشرة البريدية</h4>
+      <p>كوني أول من يعلم بالعروض والمجموعات الجديدة</p>
+      <form class="footer-mini-form" data-validate-form data-demo="true" data-success-msg="تم الاشتراك بنجاح!">
+        <input type="email" required data-validate="email" placeholder="بريدك الإلكتروني">
+        <button type="submit" class="icon-btn" style="background:var(--color-accent); color:var(--color-primary-dark); border:none; flex-shrink:0;">➜</button>
+      </form>
+      <div class="payment-icons">
+        <span>VISA</span><span>MasterCard</span><span>COD</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="js-year">2026</span> Tsabih Collection — <span data-i18n="footer_rights">جميع الحقوق محفوظة</span>. صُنع بـ ♥ في السودان</span>
+      <div class="footer-bottom-links">
+        <a href="#" data-i18n="footer_terms">الشروط والأحكام</a>
+        <a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="العودة للأعلى">↑</button>
+
+<script src="js/theme-lang.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+<script>document.getElementById('js-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

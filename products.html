@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المتجر | Tsabih Collection - تسابيح كولكشن</title>
+<meta name="description" content="تصفحي المجموعة الكاملة لأزياء تسابيح كولكشن: عبايات، فساتين سهرة، أزياء يومية وإكسسوارات.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📿</text></svg>">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-links"><span data-i18n="top_ship">شحن مجاني للطلبات فوق 50,000 ج.س</span></div>
+    <div class="top-bar-tools">
+      <a href="contact.html" data-i18n="top_track">تتبع طلبك</a>
+      <a href="contact.html" data-i18n="top_help">المساعدة</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">ت</span>
+      <span class="brand-name">Tsabih Collection<small>TSABIH COLLECTION — تسابيح كولكشن</small></span>
+    </a>
+
+    <!-- ====== زر القائمة (البرغر) ====== -->
+    <div class="burger" aria-label="القائمة">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+      <a href="products.html" class="active" data-i18n="nav_shop">المتجر</a>
+      <a href="about.html" data-i18n="nav_about">من نحن</a>
+      <a href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+      <a href="login.html" data-i18n="nav_login">حسابي</a>
+    </nav>
+
+    <!-- ====== التغطية الخلفية للقائمة ====== -->
+    <div class="nav-overlay"></div>
+
+    <div class="nav-tools">
+      <div class="dropdown">
+        <button class="icon-btn dropdown-toggle" aria-label="الإعدادات" title="اللون واللغة">🎨</button>
+        <div class="dropdown-panel">
+          <div class="dropdown-title" data-i18n="theme_label">اختر لون الموقع</div>
+          <div class="theme-grid">
+            <button class="theme-dot active" data-theme-btn="default" title="عناب وذهبي"></button>
+            <button class="theme-dot" data-theme-btn="emerald" title="زمردي وذهبي"></button>
+            <button class="theme-dot" data-theme-btn="midnight" title="كحلي وفضي"></button>
+            <button class="theme-dot" data-theme-btn="noir" title="أسود ووردي"></button>
+          </div>
+          <div class="dropdown-title" data-i18n="lang_label">اللغة / Language</div>
+          <div class="lang-switch">
+            <button data-lang-btn="ar" class="active">العربية</button>
+            <button data-lang-btn="en">English</button>
+          </div>
+        </div>
+      </div>
+      <a href="products.html#favorites" class="icon-btn" aria-label="المفضلة">♡<span class="cart-count fav-count">0</span></a>
+      <a href="order.html" class="icon-btn" aria-label="سلة التسوق">🛍<span class="cart-count">0</span></a>
+      <a href="login.html" class="icon-btn" aria-label="حسابي">👤</a>
+    </div>
+  </div>
+</header>
+
+<!-- ====== هيرو الصفحة ====== -->
+<section class="hero" style="padding:70px 0;">
+  <div class="container" style="position:relative; z-index:2; text-align:center;">
+    <h1 class="hero-title" style="font-size:clamp(1.8rem,4vw,2.6rem);">المتجر الكامل</h1>
+    <p style="opacity:.85;">الرئيسية / <strong>المتجر</strong></p>
+  </div>
+</section>
+
+<!-- ====== قسم المنتجات ====== -->
+<section class="section">
+  <div class="container">
+    <div class="shop-layout">
+
+      <!-- ============ الفلاتر الجانبية ============ -->
+      <aside class="filters-box" data-reveal="left">
+        <h4>تصفية النتائج</h4>
+        <p style="font-size:.82rem; color:var(--color-text-soft); margin-bottom:6px;">حددي ما يناسبك للوصول لأفضل اختيار</p>
+
+        <details class="filter-group" open>
+          <summary>الفئة <span>+</span></summary>
+          <label class="filter-opt"><input type="checkbox" checked> الكل (93)</label>
+          <label class="filter-opt"><input type="checkbox"> عبايات وتوب (24)</label>
+          <label class="filter-opt"><input type="checkbox"> فساتين سهرة (18)</label>
+          <label class="filter-opt"><input type="checkbox"> أزياء يومية (36)</label>
+          <label class="filter-opt"><input type="checkbox"> إكسسوارات (15)</label>
+        </details>
+
+        <details class="filter-group" open>
+          <summary>المقاس <span>+</span></summary>
+          <div class="size-options">
+            <div class="size-opt">S</div>
+            <div class="size-opt">M</div>
+            <div class="size-opt selected">L</div>
+            <div class="size-opt">XL</div>
+            <div class="size-opt">2XL</div>
+          </div>
+        </details>
+
+        <details class="filter-group" open>
+          <summary>اللون <span>+</span></summary>
+          <div class="color-swatches">
+            <span class="swatch" style="background:#5C1A2B;" title="عناب"></span>
+            <span class="swatch" style="background:#C7A252;" title="ذهبي"></span>
+            <span class="swatch" style="background:#1A1A1A;" title="أسود"></span>
+            <span class="swatch" style="background:#F7F0E6; border-color:#ccc;" title="عاجي"></span>
+            <span class="swatch" style="background:#8FA998;" title="زيتي"></span>
+            <span class="swatch" style="background:#D88C9A;" title="وردي"></span>
+          </div>
+        </details>
+
+        <details class="filter-group" open>
+          <summary>السعر <span>+</span></summary>
+          <input type="range" min="5000" max="100000" value="55000" step="1000" class="price-range">
+          <div style="display:flex; justify-content:space-between; font-size:.8rem; color:var(--color-text-soft); margin-top:6px;">
+            <span>5,000 ج.س</span>
+            <span class="price-range-out">55,000</span>
+            <span>100,000 ج.س</span>
+          </div>
+        </details>
+
+        <button class="btn btn-primary btn-block" style="margin-top:16px;">تطبيق الفلاتر</button>
+      </aside>
+
+      <!-- ============ نتائج المنتجات ============ -->
+      <div>
+        <div class="product-toolbar">
+          <span class="result-count">عرض 1–9 من أصل 93 منتج</span>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <label style="font-size:.85rem; color:var(--color-text-soft);" data-i18n="sort_label">ترتيب حسب:</label>
+            <select class="sort-select">
+              <option data-i18n="sort1">الأحدث</option>
+              <option data-i18n="sort2">الأقل سعراً</option>
+              <option data-i18n="sort3">الأعلى سعراً</option>
+              <option data-i18n="sort4">الأكثر مبيعاً</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-grid" id="favorites">
+          <!-- منتج 1 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <span class="product-tag">جديد</span>
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&q=80" alt="فستان عناب مطرز">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">فساتين سهرة</span>
+              <h3 class="product-name">فستان عناب مطرز يدوياً</h3>
+              <div class="product-rating">★★★★★ (48)</div>
+              <div class="product-price"><span class="price-now">42,000 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 2 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <span class="product-tag sale">خصم 20%</span>
+              <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&q=80" alt="توب حرير كريمي">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">عبايات وتوب</span>
+              <h3 class="product-name">توب حرير كريمي فاخر</h3>
+              <div class="product-rating">★★★★★ (31)</div>
+              <div class="product-price"><span class="price-now">28,800 ج.س</span><span class="price-old">36,000 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 3 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80" alt="طقم يومي عصري">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">أزياء يومية</span>
+              <h3 class="product-name">طقم يومي عصري بقصة مريحة</h3>
+              <div class="product-rating">★★★★☆ (19)</div>
+              <div class="product-price"><span class="price-now">19,500 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 4 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&q=80" alt="عباية سوداء مطرزة">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">عبايات وتوب</span>
+              <h3 class="product-name">عباية سوداء مطرزة بخيط ذهبي</h3>
+              <div class="product-rating">★★★★★ (62)</div>
+              <div class="product-price"><span class="price-now">33,000 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 5 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <span class="product-tag">الأكثر مبيعاً</span>
+              <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&q=80" alt="فستان سهرة زمردي">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">فساتين سهرة</span>
+              <h3 class="product-name">فستان سهرة زمردي بذيل طويل</h3>
+              <div class="product-rating">★★★★★ (77)</div>
+              <div class="product-price"><span class="price-now">55,000 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 6 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=500&q=80" alt="طرحة حريرية">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">إكسسوارات</span>
+              <h3 class="product-name">طرحة حريرية بألوان ترابية</h3>
+              <div class="product-rating">★★★★☆ (24)</div>
+              <div class="product-price"><span class="price-now">8,500 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 7 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <span class="product-tag sale">خصم 15%</span>
+              <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=500&q=80" alt="فستان يومي وردي">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">أزياء يومية</span>
+              <h3 class="product-name">فستان يومي وردي قطن مصري</h3>
+              <div class="product-rating">★★★★☆ (15)</div>
+              <div class="product-price"><span class="price-now">14,450 ج.س</span><span class="price-old">17,000 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 8 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=500&q=80" alt="حقيبة يد جلدية">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">إكسسوارات</span>
+              <h3 class="product-name">حقيبة يد جلدية فاخرة</h3>
+              <div class="product-rating">★★★★★ (40)</div>
+              <div class="product-price"><span class="price-now">21,000 ج.س</span></div>
+            </div>
+          </div>
+          <!-- منتج 9 -->
+          <div class="product-card" data-reveal>
+            <div class="product-thumb">
+              <span class="product-tag">جديد</span>
+              <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&q=80" alt="عباية كحلية أنيقة">
+              <div class="product-actions"><button class="js-add-cart">أضف للسلة</button><button class="fav-btn js-add-fav">♡</button></div>
+            </div>
+            <div class="product-body">
+              <span class="product-cat">عبايات وتوب</span>
+              <h3 class="product-name">عباية كحلية أنيقة بقصة إيطالية</h3>
+              <div class="product-rating">★★★★★ (33)</div>
+              <div class="product-price"><span class="price-now">37,200 ج.س</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">…</a>
+          <a href="#">10</a>
+          <a href="#" aria-label="التالي">›</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== الفوتر ============== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand"><span class="brand-mark">ت</span><span class="brand-name">Tsabih Collection</span></a>
+      <p data-i18n="footer_about">تسابيح كولكشن علامة سودانية للأزياء الراقية، نقدم قطعاً تجمع بين الأصالة والحداثة بجودة استثنائية وخدمة تليق بكِ.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="فيسبوك">f</a><a href="#" aria-label="إنستغرام">◎</a><a href="#" aria-label="تيك توك">♪</a><a href="#" aria-label="واتساب">✆</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_links">روابط سريعة</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+        <li><a href="products.html" data-i18n="nav_shop">المتجر</a></li>
+        <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+        <li><a href="login.html" data-i18n="nav_login">حسابي</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_help">خدمة العملاء</h4>
+      <ul>
+        <li><a href="#" data-i18n="footer_help1">سياسة الشحن</a></li>
+        <li><a href="#" data-i18n="footer_help2">سياسة الإرجاع</a></li>
+        <li><a href="contact.html" data-i18n="footer_help3">الأسئلة الشائعة</a></li>
+        <li><a href="#" data-i18n="footer_help4">دليل المقاسات</a></li>
+        <li><a href="#" data-i18n="footer_help5">تتبع الطلب</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4 data-i18n="footer_newsletter">النشرة البريدية</h4>
+      <p>كوني أول من يعلم بالعروض والمجموعات الجديدة</p>
+      <form class="footer-mini-form" data-validate-form data-demo="true" data-success-msg="تم الاشتراك بنجاح!">
+        <input type="email" required data-validate="email" placeholder="بريدك الإلكتروني">
+        <button type="submit" class="icon-btn" style="background:var(--color-accent); color:var(--color-primary-dark); border:none; flex-shrink:0;">➜</button>
+      </form>
+      <div class="payment-icons"><span>VISA</span><span>MasterCard</span><span>COD</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="js-year">2026</span> Tsabih Collection — <span data-i18n="footer_rights">جميع الحقوق محفوظة</span>. صُنع بـ ♥ في السودان</span>
+      <div class="footer-bottom-links">
+        <a href="#" data-i18n="footer_terms">الشروط والأحكام</a>
+        <a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="العودة للأعلى">↑</button>
+
+<script src="js/theme-lang.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+<script>document.getElementById('js-year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

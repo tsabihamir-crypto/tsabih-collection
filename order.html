@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="default">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إتمام الطلب | Tsabih Collection - تسابيح كولكشن</title>
+<meta name="description" content="أكملي بيانات طلبك في تسابيح كولكشن: اختيار المنتج، المقاس، اللون، بيانات الشحن وطريقة الدفع.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📿</text></svg>">
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-links"><span data-i18n="top_ship">شحن مجاني للطلبات فوق 50,000 ج.س</span></div>
+    <div class="top-bar-tools">
+      <a href="contact.html" data-i18n="top_track">تتبع طلبك</a>
+      <a href="contact.html" data-i18n="top_help">المساعدة</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">ت</span>
+      <span class="brand-name">Tsabih Collection<small>TSABIH COLLECTION — تسابيح كولكشن</small></span>
+    </a>
+
+    <!-- ====== زر القائمة (البرغر) ====== -->
+    <div class="burger" aria-label="القائمة">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+      <a href="products.html" data-i18n="nav_shop">المتجر</a>
+      <a href="about.html" data-i18n="nav_about">من نحن</a>
+      <a href="contact.html" data-i18n="nav_contact">تواصل معنا</a>
+      <a href="login.html" data-i18n="nav_login">حسابي</a>
+    </nav>
+
+    <!-- ====== التغطية الخلفية للقائمة ====== -->
+    <div class="nav-overlay"></div>
+
+    <div class="nav-tools">
+      <div class="dropdown">
+        <button class="icon-btn dropdown-toggle" aria-label="الإعدادات" title="اللون واللغة">🎨</button>
+        <div class="dropdown-panel">
+          <div class="dropdown-title" data-i18n="theme_label">اختر لون الموقع</div>
+          <div class="theme-grid">
+            <button class="theme-dot active" data-theme-btn="default"></button>
+            <button class="theme-dot" data-theme-btn="emerald"></button>
+            <button class="theme-dot" data-theme-btn="midnight"></button>
+            <button class="theme-dot" data-theme-btn="noir"></button>
+          </div>
+          <div class="dropdown-title" data-i18n="lang_label">اللغة / Language</div>
+          <div class="lang-switch">
+            <button data-lang-btn="ar" class="active">العربية</button>
+            <button data-lang-btn="en">English</button>
+          </div>
+        </div>
+      </div>
+      <a href="products.html#favorites" class="icon-btn" aria-label="المفضلة">♡<span class="cart-count fav-count">0</span></a>
+      <a href="order.html" class="icon-btn" aria-label="سلة التسوق">🛍<span class="cart-count">0</span></a>
+      <a href="login.html" class="icon-btn" aria-label="حسابي">👤</a>
+    </div>
+  </div>
+</header>
+
+<!-- ====== هيرو الصفحة ====== -->
+<section class="hero" style="padding:70px 0;">
+  <div class="container" style="position:relative; z-index:2; text-align:center;">
+    <h1 class="hero-title" style="font-size:clamp(1.8rem,4vw,2.6rem);">إتمام الطلب</h1>
+    <p style="opacity:.85;">الرئيسية / <strong>الطلب</strong></p>
+  </div>
+</section>
+
+<!-- ====== قسم الطلب ====== -->
+<section class="section">
+  <div class="container">
+
+    <!-- ============ خطوات الطلب ============ -->
+    <div class="order-steps" data-reveal>
+      <div class="order-step done"><div class="num">✓</div><span>اختيار المنتج</span></div>
+      <div class="order-step active"><div class="num">2</div><span>بيانات الشحن</span></div>
+      <div class="order-step"><div class="num">3</div><span>طريقة الدفع</span></div>
+      <div class="order-step"><div class="num">4</div><span>تأكيد الطلب</span></div>
+    </div>
+
+    <div class="order-layout">
+      <!-- ============ نموذج الطلب التفصيلي ============ -->
+      <div class="order-card" data-reveal="left">
+        <div class="alert-box"></div>
+
+        <form action="php/order.php" method="POST" data-validate-form data-demo="true" data-success-msg="تم استلام طلبك بنجاح! رقم الطلب: TSB-2026-0458">
+
+          <!-- ---------- القسم 1: تفاصيل المنتج ---------- -->
+          <fieldset class="order-fieldset">
+            <legend><span class="lg-num">1</span> تفاصيل المنتج المطلوب</legend>
+
+            <div class="form-group">
+              <label for="o_product">اختاري المنتج <span class="required">*</span></label>
+              <select id="o_product" name="product" class="form-control" required style="padding-inline-start:16px;">
+                <option value="">-- اختاري منتجاً من المتجر --</option>
+                <option value="dress_burgundy" selected>فستان عناب مطرز يدوياً — 42,000 ج.س</option>
+                <option value="top_silk">توب حرير كريمي فاخر — 28,800 ج.س</option>
+                <option value="daily_set">طقم يومي عصري بقصة مريحة — 19,500 ج.س</option>
+                <option value="abaya_black">عباية سوداء مطرزة بخيط ذهبي — 33,000 ج.س</option>
+                <option value="evening_emerald">فستان سهرة زمردي بذيل طويل — 55,000 ج.س</option>
+                <option value="scarf_silk">طرحة حريرية بألوان ترابية — 8,500 ج.س</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>المقاس <span class="required">*</span></label>
+              <div class="size-options">
+                <div class="size-opt">S</div>
+                <div class="size-opt">M</div>
+                <div class="size-opt selected">L</div>
+                <div class="size-opt">XL</div>
+                <div class="size-opt">2XL</div>
+              </div>
+              <input type="hidden" name="size" value="L">
+            </div>
+
+            <div class="form-group">
+              <label>اللون <span class="required">*</span></label>
+              <div class="color-options">
+                <div class="color-opt selected" style="background:#5C1A2B;" title="عناب"></div>
+                <div class="color-opt" style="background:#1A1A1A;" title="أسود"></div>
+                <div class="color-opt" style="background:#C7A252;" title="ذهبي"></div>
+                <div class="color-opt" style="background:#F7F0E6; border-color:#ccc;" title="عاجي"></div>
+                <div class="color-opt" style="background:#8FA998;" title="زيتي"></div>
+              </div>
+              <input type="hidden" name="color" value="عناب">
+            </div>
+
+            <div class="form-group">
+              <label>الكمية <span class="required">*</span></label>
+              <div class="qty-input">
+                <button type="button" class="qty-minus">−</button>
+                <input type="number" name="quantity" value="1" min="1" max="10" readonly>
+                <button type="button" class="qty-plus">+</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="o_notes">ملاحظات إضافية على المنتج (اختياري)</label>
+              <textarea id="o_notes" name="product_notes" class="form-control" placeholder="مثال: أرغب في تعديل بسيط في الطول..."></textarea>
+            </div>
+          </fieldset>
+
+          <!-- ---------- القسم 2: بيانات العميلة والشحن ---------- -->
+          <fieldset class="order-fieldset">
+            <legend><span class="lg-num">2</span> بيانات الشحن</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="o_name">الاسم الكامل <span class="required">*</span></label>
+                <input type="text" id="o_name" name="customer_name" class="form-control" required data-validate="name" placeholder="اسمك الكامل">
+                <span class="field-error">⚠</span>
+              </div>
+              <div class="form-group">
+                <label for="o_phone">رقم الهاتف <span class="required">*</span></label>
+                <input type="tel" id="o_phone" name="phone" class="form-control" required data-validate="phone" placeholder="0912345678">
+                <span class="field-error">⚠</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="o_email">البريد الإلكتروني <span class="required">*</span></label>
+              <input type="email" id="o_email" name="email" class="form-control" required data-validate="email" placeholder="example@email.com">
+              <span class="field-error">⚠</span>
+            </div>
+
+            <div class="form-row-3">
+              <div class="form-group">
+                <label for="o_state">الولاية <span class="required">*</span></label>
+                <select id="o_state" name="state" class="form-control" required style="padding-inline-start:16px;">
+                  <option value="">اختاري الولاية</option>
+                  <option>الخرطوم</option>
+                  <option>الجزيرة</option>
+                  <option>نهر النيل</option>
+                  <option>كسلا</option>
+                  <option>القضارف</option>
+                  <option>بورتسودان</option>
+                  <option>أخرى</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="o_city">المدينة / المحلية <span class="required">*</span></label>
+                <input type="text" id="o_city" name="city" class="form-control" required placeholder="مثال: أم درمان">
+              </div>
+              <div class="form-group">
+                <label for="o_postal">الرمز البريدي</label>
+                <input type="text" id="o_postal" name="postal_code" class="form-control" data-validate="postal" placeholder="اختياري">
+                <span class="field-error">⚠</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="o_address">العنوان التفصيلي <span class="required">*</span></label>
+              <textarea id="o_address" name="address" class="form-control" required data-validate="address" placeholder="اسم الحي، رقم المنزل، أقرب علامة مميزة..."></textarea>
+              <span class="field-error">⚠</span>
+            </div>
+
+            <label class="checkbox-row">
+              <input type="checkbox" name="save_address">
+              <span>احفظي هذا العنوان لطلباتي القادمة</span>
+            </label>
+          </fieldset>
+
+          <!-- ---------- القسم 3: طريقة الدفع ---------- -->
+          <fieldset class="order-fieldset">
+            <legend><span class="lg-num">3</span> طريقة الدفع</legend>
+            <div class="payment-options">
+              <label class="pay-opt selected">
+                <input type="radio" name="payment_method" value="cod" checked>
+                <span class="pay-ic">💵</span>
+                <div><strong>الدفع عند الاستلام</strong><span>ادفعي نقداً عند وصول طلبك</span></div>
+              </label>
+              <label class="pay-opt">
+                <input type="radio" name="payment_method" value="bank">
+                <span class="pay-ic">🏦</span>
+                <div><strong>تحويل بنكي</strong><span>سنرسل لكِ بيانات الحساب البنكي بعد تأكيد الطلب</span></div>
+              </label>
+              <label class="pay-opt">
+                <input type="radio" name="payment_method" value="card">
+                <span class="pay-ic">💳</span>
+                <div><strong>بطاقة ائتمانية / مدى</strong><span>دفع إلكتروني آمن (يتطلب ربط بوابة دفع عند الاستضافة)</span></div>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="checkbox-row">
+            <input type="checkbox" required data-validate="checkbox" name="terms_agree">
+            <span>قرأت ووافقت على <a href="#">الشروط والأحكام</a> و<a href="#">سياسة الشحن والإرجاع</a></span>
+          </label>
+          <span class="field-error" style="margin-top:-14px; margin-bottom:16px;">⚠ يجب الموافقة على الشروط لإتمام الطلب</span>
+
+          <button type="submit" class="btn btn-gold btn-block" style="padding:18px;">تأكيد الطلب 🛍</button>
+        </form>
+      </div>
+
+      <!-- ============ ملخص الطلب ============ -->
+      <aside class="order-summary" data-reveal="right">
+        <h3>ملخص طلبك</h3>
+
+        <div class="summary-item">
+          <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=150&q=80" alt="فستان عناب مطرز">
+          <div class="si-info"><h5>فستان عناب مطرز يدوياً</h5><span>المقاس: L | اللون: عناب | الكمية: 1</span></div>
+          <span class="si-price">42,000</span>
+        </div>
+
+        <div class="summary-line"><span>المجموع الفرعي</span><span>42,000 ج.س</span></div>
+        <div class="summary-line"><span>الشحن</span><span>2,500 ج.س</span></div>
+        <div class="summary-line"><span>الخصم</span><span style="color:var(--color-success);">— 0 ج.س</span></div>
+        <div class="summary-line total"><span>الإجمالي</span><span>44,500 ج.س</span></div>
+
+        <div class="promo-row">
+          <input type="text" class="form-control" placeholder="كود الخصم" style="padding-inline-start:16px;">
+          <button class="btn btn-outline btn-sm">تطبيق</button>
+        </div>
+
+        <div class="tasbih-divider"><span></span><span></span><span></span><span></span><span></span></div>
+        <p style="font-size:.8rem; color:var(--color-text-soft); text-align:center;">🔒 معلوماتك محمية بالكامل ولن تُشارك مع أي طرف ثالث</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============== الفوتر ============== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand"><span class="brand-mark">ت</span><span class="brand-name">Tsabih Collection</span></a>
+      <p data-i18n="footer_about">تسابيح كولكشن علامة سودانية للأزياء الراقية، نقدم قطعاً تجمع بين الأصالة والحداثة بجودة استثنائية وخدمة تليق بكِ.</p>
+      <div class="footer-social"><a href="#">f</a><a href="#">◎</a><a href="#">♪</a><a href="#">✆</a></div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_links">روابط سريعة</h4>
+      <ul>
+        <li><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+        <li><a href="products.html" data-i18n="nav_shop">المتجر</a></li>
+        <li><a href="about.html" data-i18n="nav_about">من نحن</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">تواصل معنا</a></li>
+        <li><a href="login.html" data-i18n="nav_login">حسابي</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer_help">خدمة العملاء</h4>
+      <ul>
+        <li><a href="#" data-i18n="footer_help1">سياسة الشحن</a></li>
+        <li><a href="#" data-i18n="footer_help2">سياسة الإرجاع</a></li>
+        <li><a href="contact.html" data-i18n="footer_help3">الأسئلة الشائعة</a></li>
+        <li><a href="#" data-i18n="footer_help4">دليل المقاسات</a></li>
+        <li><a href="#" data-i18n="footer_help5">تتبع الطلب</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-newsletter">
+      <h4 data-i18n="footer_newsletter">النشرة البريدية</h4>
+      <p>كوني أول من يعلم بالعروض والمجموعات الجديدة</p>
+      <form class="footer-mini-form" data-validate-form data-demo="true" data-success-msg="تم الاشتراك بنجاح!">
+        <input type="email" required data-validate="email" placeholder="بريدك الإلكتروني">
+        <button type="submit" class="icon-btn" style="background:var(--color-accent); color:var(--color-primary-dark); border:none; flex-shrink:0;">➜</button>
+      </form>
+      <div class="payment-icons"><span>VISA</span><span>MasterCard</span><span>COD</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="js-year">2026</span> Tsabih Collection — <span data-i18n="footer_rights">جميع الحقوق محفوظة</span>. صُنع بـ ♥ في السودان</span>
+      <div class="footer-bottom-links">
+        <a href="#" data-i18n="footer_terms">الشروط والأحكام</a>
+        <a href="#" data-i18n="footer_privacy">سياسة الخصوصية</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="العودة للأعلى">↑</button>
+
+<script src="js/theme-lang.js"></script>
+<script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+<script>
+document.getElementById('js-year').textContent = new Date().getFullYear();
+
+// تحديث الحقول المخفية (المقاس واللون) عند اختيار المستخدمة لهما بصرياً
+document.querySelectorAll('.size-opt').forEach(function (opt) {
+  opt.addEventListener('click', function () {
+    document.querySelector('input[name="size"]').value = opt.textContent.trim();
+  });
+});
+
+document.querySelectorAll('.color-opt').forEach(function (opt) {
+  opt.addEventListener('click', function () {
+    document.querySelector('input[name="color"]').value = opt.getAttribute('title');
+  });
+});
+</script>
+</body>
+</html>
